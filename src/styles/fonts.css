@@ -19,3 +19,13 @@
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
     U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+
+/* UI Character Subset of EarlySummerSerif Variable Font */
+@font-face {
+  font-family: "EarlySummer-Index";
+  src: url("/fonts/EarlySummerSerif-VF-Index.woff2") format("woff2-variations");
+  font-display: swap;
+  font-weight: 400 700;
+  unicode-range: U+5A11,U+5A46,U+6E38,U+8BB0,U+201C,U+867D,U+4E16,U+6B8A,U+4E8B,U+5F02,U+FF0C,U+6240,U+4EE5,U+5174,U+6000,U+FF0C,U+5176,U+81F4,U+4E00,U+4E5F,U+3002,U+540E,U+4E4B,U+89C8,U+8005,U+FF0C,U+4EA6,U+5C06,U+6709,U+611F,U+4E8E,U+65AF,U+6587,U+3002,U+201D,U+00A9,1,2,3,4,5,6,7,8,9,0,U+5FC3,U+53F3;
+}
