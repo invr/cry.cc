@@ -20,8 +20,7 @@
     U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
-/* UI Character Subset of EarlySummerSerif Variable Font */
+/* UI Character Index of EarlySummerSerif Variable Font */
 @font-face {
   font-family: "EarlySummer-Index";
   src: url("/fonts/EarlySummerSerif-VF-Index.woff2") format("woff2-variations");

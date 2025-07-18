@@ -19,7 +19,8 @@
   margin: 0 0 0.25rem 0;
 }
 
-/* Headings (h1-h5) */
+/* Headings (h1-h5)
+ Adjust size or spacing below if needed. */
 .prose h1,
 .prose h2,
 .prose h3,
@@ -170,8 +171,8 @@
 
 /* Inline code */
 .prose code {
-  padding: 3px 5px;
-  border-radius: 6px;
+  padding: 2.5px 3.5px;
+  border-radius: 5px;
   background-color: var(--code-bg);
   border: 0.5px solid var(--border);
   font-family: var(--mono);
