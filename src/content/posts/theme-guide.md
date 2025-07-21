@@ -23,7 +23,7 @@ Chiri is a minimal blog theme built with [Astro](https://astro.build), offering 
 
 site: {
   // Site domain
-  website: 'https://astro-chiri.netlify.app/',
+  website: 'https://cry.cc/',
   // Site title
   title: 'CHIRI',
   // Author name
