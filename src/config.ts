@@ -4,9 +4,9 @@ export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
     website: 'https://cry.cc/', // Site domain
-    title: '西墙序', // Site title
-    author: '芹溪散人', // Author name
-    description: '庞贝册为我的封地时庞贝已是废墟', // Site description
+    title: '西墙', // Site title
+    author: '芹溪客', // Author name
+    description: '庞贝册为我的封地时/庞贝已是废墟', // Site description
     language: 'zh-CN' // Default language
   },
 
