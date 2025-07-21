@@ -9,11 +9,7 @@ Chiri is a minimal blog theme built with [Astro](https://astro.build), offering 
 
 ## Basic Commands
 
-<<<<<<< HEAD
-- `pnpm new <title>` - Create a new post (use `_title` for drafts)
-=======
 - `pnpm new <title` - Create a new post (use `_title` for drafts)
->>>>>>> upstream/main
 - `pnpm update-theme` - Update the theme to the latest version
 
 ## Main Files & Directories
