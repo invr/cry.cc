@@ -9,18 +9,18 @@ Chiri is a minimal blog theme built with [Astro](https://astro.build), offering 
 
 ## Basic Commands
 
-- `pnpm new <title` - Create a new post (use `_title` for drafts)
+- `pnpm new <title>` - Create a new post (use `_title` for drafts)
 - `pnpm update-theme` - Update the theme to the latest version
 
 ## Main Files & Directories
 
 - `src/content/about/about.md` - Edit the about section of the index page. Leave it empty if you don't want any content.
 - `src/content/posts/` - All blog posts are stored here
-- `src/config.ts` - Configure main site info and settings ↓
-
-- Site Info
+- `src/config.ts` - Configure main site info and settings
 
 ```ts
+// Site Info
+
 site: {
   // Site domain
   website: 'https://astro-chiri.netlify.app/',
@@ -35,9 +35,9 @@ site: {
 },
 ```
 
-- General Settings
-
 ```ts
+// General Settings
+
 general: {
   // Content area width
   contentWidth: '35rem',
@@ -52,9 +52,9 @@ general: {
 },
 ```
 
-- Date Settings
-
 ```ts
+// Date Settings
+
 date: {
   // Date format: YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   dateFormat: 'YYYY-MM-DD',
@@ -65,9 +65,9 @@ date: {
 },
 ```
 
-- Post Settings
-
 ```ts
+// Post Settings
+
 post: {
   // Show reading time in posts
   readingTime: false,
@@ -91,13 +91,11 @@ pubDate: '2025-07-10'
 ---
 ```
 
----
-
 ## Syntax Highlighting
 
 You can configure the theme via `shikiConfig` in `astro.config.ts`.
 
-For more details: [Syntax Highlighting | Astro Docs](https://docs.astro.build/en/guides/syntax-highlighting/)
+More details: [Syntax Highlighting | Astro Docs](https://docs.astro.build/en/guides/syntax-highlighting/)
 
 ```ts
 import { defineConfig } from 'astro/config'
@@ -117,26 +115,14 @@ export default defineConfig({
 
 ## Preview of Some Features
 
-- Theme Toggle
+![Theme Toggle](./_assets/theme-toggle.png)
 
-![_Theme Toggle Button](./_assets/theme-toggle.png)
+![Dotted Divider](./_assets/dotted-divider.png)
 
-- Dotted Divider
+![Date on Left Side](./_assets/date-on-left.png)
 
-![_Dotted Divider](./_assets/dotted-divider.png)
+![Table of Contents](./_assets/toc.png)
 
-- Date on Left Side
+![Reading Time](./_assets/reading-time.png)
 
-![_Date on Left Side](./_assets/date-on-left.png)
-
-- Table of Contents
-
-![_Table of Contents](./_assets/toc.png)
-
-- Reading Time
-
-![_Reading Time Display](./_assets/reading-time.png)
-
-- Copy Code Button
-
-![_Copy Code Button](./_assets/copy-code.png)
+![Copy Code](./_assets/copy-code.png)
