@@ -30,7 +30,7 @@ export const themeConfig: ThemeConfig = {
   // POST SETTINGS ///////////////////////////////////////////////////////////////////////////////////////
   post: {
     readingTime: false, // Show reading time in posts
-    toc: true, // Show the table of contents (when there is enough page width)
+    toc: true, // Show table of contents (when there is enough page width)
     imageViewer: true, // Enable image viewer
     copyCode: true // Enable copy button in code blocks
   }
