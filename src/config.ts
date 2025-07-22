@@ -5,7 +5,7 @@ export const themeConfig: ThemeConfig = {
   site: {
     website: 'https://cry.cc/', // Site domain
     title: '西墙', // Site title
-    author: '芹溪客', // Author name
+    author: 'Wailing Wall', // Author name
     description: '庞贝册为我的封地时/庞贝已是废墟', // Site description
     language: 'zh-CN' // Default language
   },
