@@ -1,6 +1,5 @@
 <script is:inline>
-  // This script finds all NeoDB containers on the page and fetches data for each one.
-  document.addEventListener('DOMContentLoaded', () => {
+  function loadNeoDBCards() {
     const allContainers = document.querySelectorAll('.neodb-card-container')
 
     allContainers.forEach((container) => {
@@ -43,8 +42,8 @@
       const coverClass = isSquare ? 'music' : 'other'
       const cardHeightClass = isSquare ? 'compact' : 'standard'
 
-      // Round rating to the nearest half-star: 1 point = 0.5 star
-      const roundedRating = itemRating !== null ? Math.round(itemRating * 2) / 2 : null
+      // Convert rating to star percentage with half-star precision: 10 points = 100% (5 stars)
+      const starPercentage = itemRating !== null ? Math.round((itemRating / 10) * 10) * 10 : null
 
       // Build field info
       const fieldInfo = []
@@ -128,10 +127,10 @@
           <div class="neodb-info">
             <div class="neodb-title">${title || ''}</div>
             ${
-              roundedRating !== null
+              starPercentage !== null
                 ? `<div class="rating">
               <span class="allstarbg">
-                <span class="allstarfg" style="width:${(roundedRating / 10) * 100}%"></span>
+                <span class="allstarfg" style="width:${starPercentage}%"></span>
               </span>
               <span class="rating_nums">${itemRating.toFixed(1)}</span>
             </div>`
@@ -200,7 +199,10 @@
         renderError(container)
       }
     })
-  })
+  }
+
+  loadNeoDBCards()
+  document.addEventListener('astro:page-load', loadNeoDBCards)
 </script>
 
 <style is:inline>

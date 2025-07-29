@@ -1,6 +1,4 @@
-import type { APIContext } from 'astro'
 import { generateAtom } from '@/utils/feed'
+import type { APIContext } from 'astro'
 
-export async function GET(context: APIContext) {
-  return generateAtom(context)
-}
+export const GET = (context: APIContext) => generateAtom(context)
