@@ -10,15 +10,6 @@ import { themeConfig } from '@/config'
 const { title, description } = Astro.props
 ---
 
-<!-- Preload -->
-<link
-  rel="preload"
-  href="/fonts/EarlySummerSerif-VF.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
-/>
-
 <BaseLayout title={title} description={description} type="page">
   <BaseHead title={title} description={description} slot="head" />
   <div class="page-content">

@@ -1,4 +1,4 @@
-# cry.cc
+# 西墙 🧱
 
 Source of my website: [https://cry.cc](https://cry.cc).
 

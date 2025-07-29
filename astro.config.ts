@@ -14,19 +14,17 @@ import remarkTOC from './src/plugins/remark-toc.mjs'
 import { themeConfig } from './src/config'
 import { imageConfig } from './src/utils/image-config'
 import path from 'path'
-
-import vercel from '@astrojs/vercel';
+import netlify from '@astrojs/netlify'
 
 export default defineConfig({
+  adapter: netlify(), // Set adapter for deployment, or set `linkCard` to `false` in `src/config.ts`
   site: themeConfig.site.website,
-
   image: {
     service: {
       entrypoint: 'astro/assets/services/sharp',
       config: imageConfig
     }
   },
-
   markdown: {
     shikiConfig: {
       theme: 'css-variables',
@@ -35,7 +33,6 @@ export default defineConfig({
     remarkPlugins: [remarkMath, remarkDirective, remarkEmbeddedMedia, remarkReadingTime, remarkTOC],
     rehypePlugins: [rehypeKatex, rehypeCleanup, rehypeImageProcessor, rehypeCopyCode]
   },
-
   integrations: [
     playformInline({
       Exclude: [(file) => file.toLowerCase().includes('katex')]
@@ -43,7 +40,6 @@ export default defineConfig({
     mdx(),
     sitemap()
   ],
-
   vite: {
     resolve: {
       alias: {
@@ -51,10 +47,7 @@ export default defineConfig({
       }
     }
   },
-
   devToolbar: {
     enabled: false
-  },
-
-  adapter: vercel()
+  }
 })
