@@ -3,10 +3,10 @@ import type { ThemeConfig } from './types'
 export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
-    website: 'https://cry.cc/', // Site domain
-    title: '西墙', // Site title
-    author: 'Wailing Wall', // Author name
-    description: '庞贝册为我的封地时/庞贝已是废墟', // Site description
+    website: 'https://astro-chiri.netlify.app/', // Site domain
+    title: 'CHIRI', // Site title
+    author: '3ASH', // Author name
+    description: 'Minimal blog built by Astro', // Site description
     language: 'en-US' // Default language
   },
 
@@ -14,7 +14,7 @@ export const themeConfig: ThemeConfig = {
   general: {
     contentWidth: '35rem', // Content area width
     centeredLayout: true, // Use centered layout (false for left-aligned)
-    themeToggle: true, // Show theme toggle button (uses system theme by default)
+    themeToggle: false, // Show theme toggle button (uses system theme by default)
     postListDottedDivider: false, // Show dotted divider in post list
     footer: true, // Show footer
     fadeAnimation: true // Enable fade animations
@@ -33,6 +33,6 @@ export const themeConfig: ThemeConfig = {
     toc: true, // Show table of contents (when there is enough page width)
     imageViewer: true, // Enable image viewer
     copyCode: true, // Enable copy button in code blocks
-    linkCard: false // Disable link card
+    linkCard: true // Enable link card
   }
 }
