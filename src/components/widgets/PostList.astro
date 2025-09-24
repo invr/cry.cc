@@ -44,7 +44,6 @@ const { posts } = Astro.props as PostListProps
     display: flex;
     flex-direction: column;
     gap: 0;
-    font-size: var(--font-size-l);
   }
 
   a {
@@ -104,6 +103,8 @@ const { posts } = Astro.props as PostListProps
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-light);
   }
 
   .date {
