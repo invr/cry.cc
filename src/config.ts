@@ -7,7 +7,7 @@ export const themeConfig: ThemeConfig = {
     title: '西墙', // Site title
     author: 'Wailing Wall', // Author name
     description: '庞贝册为我的封地时/庞贝已是废墟', // Site description
-    language: 'zh-CN' // Default language
+    language: 'en-US' // Default language
   },
 
   // GENERAL SETTINGS ////////////////////////////////////////////////////////////////////////////////////
